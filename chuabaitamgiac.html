@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input type="text" id="canh1">
+<input type="text" id="canh3">
+<input type="text" id="canh2">
+<button type="text " onclick="thuchien" ()> ENTER</button>
+<h1 id="tg"></h1>
+<body>
+<script>
+    function thuchien() {
+        let a = +document.getElementById("canh1");
+        let b = +document.getElementById("canh2");
+        let c = +document.getElementById("canh3");
+        let kq = +document.getElementById("kq")
+        if (a + b > c && a + c > b && b + c > a) {
+            alert("la tam giac ")
+            if (a == b || b == c || c == a) {
+                alert("tam giac can ")
+            }
+            if (a == c && a == b) {
+                alert("tam giac deu ")
+            }
+            if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a) {
+                alert("tam giac vuong ")
+            }
+        }
+        document.getElementById("tg").innerHTML = kq
+    }
+
+
+</script>
+
+</body>
+</html>

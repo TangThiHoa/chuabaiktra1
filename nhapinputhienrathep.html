@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="hihi">
+<input type="text" id="hiha">
+<button onclick="yyy()">ẤN</button>
+
+
+<h1 id="kq"></h1>
+
+<script>
+    let a = document.getElementById("hihi");
+    let b = document.getElementById("hiha");
+    let kq = document.getElementById("kq");
+    function yyy () {
+        let chuvi = a.value * 4;
+        let dientich = (a.value * b.value);
+        kq.innerHTML =  "chu vi = " +chuvi + " "+  "dientich=" + dientich
+
+
+    }
+</script>
+
+</body>
+</html>
